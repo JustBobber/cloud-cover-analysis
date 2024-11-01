@@ -16,24 +16,26 @@ Gennemsnitligt skydække i 2022: 80.88%
 Timer i 2022 med 25-50% skydække: 609   svarende til: 6.95%
 Timer i 2022 med  0-25% skydække: 865   svarende til: 9.87%
 ```
+
+Rapportetn er generet med 'wheather_analysis.py' scriptet, med nedenstående data.
+
 ### Rapport data
 Til rapporten brugt datasættene:
-    *'lafortuna_jan01_okt31_2024.csv'*
-    *'lafortuna_jan01_dec31_2023.csv'*
-    *'lafortuna_jan01_dec31_2022.csv'*
+- *'lafortuna_jan01_okt31_2024.csv'*
+- *'lafortuna_jan01_dec31_2023.csv'*
+- *'lafortuna_jan01_dec31_2022.csv'*
+
+Der er inkluderet. Der ligger tre andre dataset der kun er for februar - den måned vi var i La Fortuna.
 
 # Vedr. data
-Dataene om skydække er hentet fra
+Dataene for skydækket er hentet fra:
 
 https://open-meteo.com/en/docs/historical-weather-api
 
-Der ligger tre andre dataset der kun er for februar - den måned hvor der er flest besøgende i La Fortuna?
-
-
-## Til at genskabelse af data
+## Til genskabelse af data
 Naviger til ovenstående hjemmeside og:
 - 	søg efter "la fortuna" - vælg: "La Fortuna Procincia de Alajuela (10.47N, -85.65E)"
-- 	timezone er ikke sat "Not set (GMT+0)
+- 	timezone er ikke sat: "Not set (GMT+0)
 - 	vælg: "Start Date" og "End Date"
 -   fjern flueben i 'temperature'
 -   tilføj flueben i 'Cloud cover Total'
@@ -41,6 +43,6 @@ Naviger til ovenstående hjemmeside og:
 
 
 ## Generer rapport
-	For at generere en rapport, som ovenstående, (kræver python 'wheather_analysis.py' er lavet med python version 3.12.3) skal csv filen gemmes sammen med i samme mapper (som de andre "lafortuna_..._'årstal'.csv), kan python scriptet lave en repport ved at:
-	indlæs dataen fra csv filen - kopier og tilpas som linje 57-57 i 'weather_analysis.py'. Rapporten printes ved at kopiere og tilpasse som linje 62-64 i 'weather_analysis.py'. Kør scriptet.
+For at generere en rapport, som ovenstående, (kræver python; 'wheather_analysis.py' er lavet med python version 3.12.3) skal csv filen gemmes sammen med i samme mapper (som de andre "lafortuna_..._'årstal'.csv), kan python scriptet lave en repport ved at:
+indlæs dataen fra csv filen - kopier og tilpas som linje 57-57 i 'weather_analysis.py'. Rapporten printes ved at kopiere og tilpasse som linje 62-64 i 'weather_analysis.py'. Kør scriptet.
 
